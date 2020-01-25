@@ -27,7 +27,11 @@ Replace `{{ ... }}` to include the wished YouTube video id (e.g. `2Q_ZzBGPdqE`),
 In the case you do not want to provide thumbnails for every video,
 you can point to a dummy thumbnail in the CSS file.
 
-**Note: The compliance with law has not been check by lawyers. No liability can be taken, beyond the minimum legal requirements. Use of code at own risk.**
+## Legal Notes
+
+**The compliance with law has not been check by lawyers. No liability can be taken beyond the minimum legal requirements. Use at own risk.**
+
+You may want to clarify to your users in your privacy policy that this code sets the cookie `youtube-consent`.
 
 ## Credits
 This project is based upon <https://www.codepalm.de/post/youtube-2-klick-loesung/>.
