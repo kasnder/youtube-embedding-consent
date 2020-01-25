@@ -1,3 +1,4 @@
+/* Cookie functionality by https://www.w3schools.com/js/js_cookies.asp */
 function setCookie(cname, cvalue, exdays) {
   var d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
@@ -19,26 +20,6 @@ function getCookie(cname) {
   }
   return "";
 }
-document.addEventListener("DOMContentLoaded", function(e) {
-    var t = document.getElementById("pull")
-      , n = document.querySelector("nav ul");
-    t.addEventListener("click", function(e) {
-        n.classList.toggle("hide")
-    })
-});
-document.addEventListener("DOMContentLoaded", function (event) {
-    if (getCookie("youtube-consent") == 1) {
-        unblockVideos();
-    } else {
-        document.querySelectorAll('.video_wrapper .video_trigger .video-btn').forEach(function(node) {
-            node.addEventListener("click", function(event){
-                setCookie('youtube-consent', 1, 365);
-                unblockVideos();
-            });          
-        });
-    }
-});
-
 function unblockVideos() {
   document.querySelectorAll('.video_wrapper .video_trigger').forEach(function(_trigger) {
     _trigger.style.display = 'none';
@@ -61,3 +42,15 @@ function unblockVideos() {
     }
   });
 }
+document.addEventListener("DOMContentLoaded", function (event) {
+    if (getCookie("youtube-consent") == 1) {
+        unblockVideos();
+    } else {
+        document.querySelectorAll('.video_wrapper .video_trigger .video-btn').forEach(function(node) {
+            node.addEventListener("click", function(event){
+                setCookie('youtube-consent', 1, 365);
+                unblockVideos();
+            });          
+        });
+    }
+});

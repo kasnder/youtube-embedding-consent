@@ -10,7 +10,9 @@ The consent is saved in a cookie.
 
 First, integrate `yt-consent.css` and `yt-consent.js` into your web page.
 
-Then, embed videos with the following code. Replace code in bracket to include the wished YouTube video id (e.g. `2Q_ZzBGPdqE`), and optionally a URL to a thumbnail of the YouTube video.
+Then, embed videos with the following code.
+
+Replace `{{ ... }}` to include the wished YouTube video id (e.g. `2Q_ZzBGPdqE`), and optionally a URL to a thumbnail of the YouTube video.
 
 ```html
 <div class="video_wrapper" style="background-image: url( '{{url_to_video_thumbnail}}' );">
@@ -22,12 +24,12 @@ Then, embed videos with the following code. Replace code in bracket to include t
 </div>
 ```
 
-For the case that you do not want to provide thumbnails for every video,
+In the case you do not want to provide thumbnails for every video,
 you can point to a dummy thumbnail in the CSS file.
 
 **Note: The compliance with law has not been check by lawyers. No liability can be taken, beyond the minimum legal requirements. Use of code at own risk.**
 
 ## Credits
-This project is based upon https://www.codepalm.de/post/youtube-2-klick-loesung/
+This project is based upon <https://www.codepalm.de/post/youtube-2-klick-loesung/>.
 
-The code to set cookies is based upon https://www.w3schools.com/js/js_cookies.asp
+The code to set cookies is taken from <https://www.w3schools.com/js/js_cookies.asp>.
