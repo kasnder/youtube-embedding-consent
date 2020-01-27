@@ -10,6 +10,11 @@ The consent is saved in a cookie.
 
 First, integrate `yt-consent.css` and `yt-consent.js` into your web page.
 
+```html
+<link rel="stylesheet" type="text/css" href="yt-consent.css">
+<script type="text/javascript" src="yt-consent.js"></script>
+```
+
 Then, embed videos with the following code.
 
 Replace `{{ ... }}` to include the wished YouTube video id (e.g. `2Q_ZzBGPdqE`), and optionally a URL to a thumbnail of the YouTube video.
