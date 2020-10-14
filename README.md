@@ -3,8 +3,8 @@
 EU data protection legislation and similar regimes set high requirements for sharing data with third-parties.
 Asking for user consent is usually the most straightforward way to establish a legal basis for such data sharing.
 
-Hence, this repository provides a software solution to embed YouTube videos, only after user consent has been established.
-The consent is saved in a cookie.
+This project allows to embed YouTube videos into your website, but only after user consent has been established.
+Consent is saved in a cookie.
 
 ## Usage
 
@@ -29,16 +29,16 @@ Then, embed videos with the following code.
 
 Replace `{{ ... }}` to include the wished YouTube video id (e.g. `2Q_ZzBGPdqE`), and optionally a URL to a thumbnail of the YouTube video.
 
-In the case you do not want to provide thumbnails for every video,
+If you do not want to provide thumbnails for every video,
 you can point to a dummy thumbnail in the CSS file.
 
 ## Legal Notes
 
-**The compliance with law has not been check by lawyers. No liability can be taken beyond the minimum legal requirements. Use at own risk.**
+**Compliance with law has not been checked by lawyers. Use at own risk.**
 
-You may want to clarify to your users in your privacy policy that this code sets the cookie `youtube-consent`.
+You may want to clarify in your privacy policy that this code sets the cookie `youtube-consent`.
 
 ## Credits
-This project is based upon <https://www.codepalm.de/post/youtube-2-klick-loesung/>.
+This project is based on <https://www.codepalm.de/post/youtube-2-klick-loesung/>.
 
 The code to set cookies is taken from <https://www.w3schools.com/js/js_cookies.asp>.
